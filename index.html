@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Class Gallery</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Основные стили -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Навигация -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Class Gallery</h1>
+      <nav class="nav">
+        <button id="btn-view-students" class="btn btn-gold">Смотреть учеников</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Главный блок (hero) -->
+  <main id="app">
+    <section class="hero">
+      <div class="container hero-inner">
+        <h2 class="hero-title">Class Gallery</h2>
+        <p class="hero-desc">Добро пожаловать в галерею нашего класса — портфолио, фотографии и профили учеников в одном месте.</p>
+        <div class="hero-actions">
+          <button id="btn-hero-view" class="btn btn-gold btn-large">Смотреть учеников</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция со списком учеников (динамически заполняется) -->
+    <section id="students-section" class="students-section hidden">
+      <div class="container">
+        <h3 class="section-title">Ученики</h3>
+        <div id="students-grid" class="students-grid" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Профиль ученика (overlay, динамический) -->
+  <div id="profile-overlay" class="profile-overlay hidden" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="profile-panel">
+      <button id="btn-back" class="btn btn-back" aria-label="Назад">← Назад</button>
+      <div id="profile-content" class="profile-content">
+        <!-- Контент профиля рендерится JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Подключение скрипта -->
+  <script src="script.js" defer></script>
+</body>
+</html>
