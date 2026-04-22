@@ -33,15 +33,6 @@
       ]
     },
     {
-      id: "student-3",
-      name: "Ибрагим",
-      photos: [
-        "images/student-3/1.jpg",
-        "images/student-3/2.jpg",
-        "images/student-3/3.jpg"
-      ]
-    },
-    {
       id: "student-4",
       name: "Имрон",
       photos: [
